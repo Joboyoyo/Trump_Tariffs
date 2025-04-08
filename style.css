@@ -1,0 +1,130 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f3f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Container for content */
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Question Mark Button */
+#infoBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF; /* Theme color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#infoBtn:hover {
+    background-color: #0056b3;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Header styles */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Span styles for detected values */
+span {
+    display: block;
+    font-weight: bold;
+    background-color: #e8eff1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+/* Styling for the Tariff Rate display */
+#country_tariff {
+    color: #d35400;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+/* Adding a small animation on hover over detected values */
+span:hover {
+    background-color: #dfe6e9;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
